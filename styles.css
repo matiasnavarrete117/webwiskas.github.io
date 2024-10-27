@@ -1,0 +1,4 @@
+nav ul li {
+    display: inline;  /* Hace que los elementos se muestren en línea */
+    margin-right: 15px;
+}
