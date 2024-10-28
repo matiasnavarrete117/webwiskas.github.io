@@ -2,3 +2,19 @@ nav ul li {
     display: inline;  /* Hace que los elementos se muestren en línea */
     margin-right: 15px;
 }
+body {
+    font-family: Arial, sans-serif; <!- Fuente usada -->
+
+    
+}
+footer {
+    position: fixed; /* Hace que el footer se quede en la misma posición */
+    bottom: 0; /* Lo fija a la parte inferior de la pantalla */
+    left: 0;
+    width: 100%; /* Se asegura que ocupe todo el ancho de la ventana */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    z-index: 100; /* Para que se asegure de estar por encima de otros elementos */
+}
