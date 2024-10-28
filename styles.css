@@ -137,6 +137,10 @@ body {
 .slider-nav a:hover{
 opacity: 1;
 
+.audio {
+display: flex;
+}
+
 }
 
 footer {
