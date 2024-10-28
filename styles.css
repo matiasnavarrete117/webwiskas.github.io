@@ -141,17 +141,22 @@ opacity: 1;
 
 footer {
     display: flex;
-    position: fixed; /* Hace que el footer se quede en la misma posición */
-    bottom: 0; /* Lo fija a la parte inferior de la pantalla */
+    justify-content: center; /* Centra todo el contenido dentro del footer */
+    align-items: center; /* Centra verticalmente el contenido en el footer */
+    position: fixed;
+    bottom: 0;
     left: 0;
-    width: 100%; /* Se asegura que ocupe todo el ancho de la ventana */
+    width: 100%;
     background-color: #ffffff;
     color: #000000;
     text-align: center;
     padding: 1%;
-    z-index: 100; /* Para que se asegure de estar por encima de otros elementos */
-    font-family: Arial, Helvetica, sans-serif; /* Fuente utilizada */
-    align-items: center; /* Centra verticalmente los elementos */
-    
-    
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.copyright {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
