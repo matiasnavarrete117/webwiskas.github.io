@@ -220,3 +220,30 @@ margin-top: 2rem;
     gap: 20px;
     align-items: center;
 }
+
+.formulario_contacto {
+    background-color: #f9f9f9; /* Color de fondo del formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 50%; /* Ancho del formulario */
+    color: #000000;
+   align-items: center;
+   align-content: center;
+   text-align: left;
+   margin-left: 20%;
+   margin-right: 20%;
+}
+
+
+input[type="email"], textarea {
+    width: 50%; /* Hace que los campos ocupen todo el ancho del formulario */
+    padding: 10px; /* Espaciado interno de los campos */
+    margin-bottom: 15px; /* Espacio entre los campos */
+    border: 1px solid #ccc; /* Borde de los campos */
+    border-radius: 4px; /* Bordes redondeados para los campos */
+}
+
+label {
+    display: block; /* Hace que las etiquetas ocupen toda la línea */
+    margin-bottom: 10px; /* Espacio debajo de las etiquetas */
+}
