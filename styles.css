@@ -87,6 +87,10 @@ body {
 
 }
 
+.contenido_texto p {
+    line-height: 1.5; /* Espacio entre líneas */
+}
+
 .container {
     padding: 2rem;
 }
@@ -112,6 +116,7 @@ body {
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
+   
 }
 
 .slider-nav {
@@ -140,10 +145,10 @@ opacity: 1;
 
 .audio {
  display: flex;
- justify-content: center; /* Centra todo el contenido dentro del footer */
- align-items: center; /* Centra verticalmente el contenido en el footer */
+ justify-content: left; /* Centra todo el contenido */
  margin-top: 50px;
- margin-bottom: 50px;
+ margin-bottom: 20px;
+ margin-left: 20%;
     }
 
 footer {
@@ -160,6 +165,10 @@ footer {
     padding: 1%;
     z-index: 100;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.features ul li {
+    margin-bottom: 3rem; /* Ajusta el espacio entre líneas */
 }
 
 .copyright {
