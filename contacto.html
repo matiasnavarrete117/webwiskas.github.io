@@ -46,17 +46,21 @@
 
 <body>
 
-<div class="formulario_contacto">
-    <form action="/ruta_del_servidor" method="POST">
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="mensaje">Su mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
-
-        <button type="submit">Enviar</button>
-    </form>
-
-</div>
+    
+    <div class="formulario_contacto">
+        <form action="https://formspree.io/f/mbljdnjo" method="POST">
+            <label>
+                Tu email:
+                <input type="email" name="email">
+              </label>
+              <label>
+                Tu mensaje:
+                <textarea name="message"></textarea>
+              </label>
+              <button type="submit">Send</button>
+        </form>
+    </div>
+    
 </body>
 </html>
 
