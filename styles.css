@@ -83,7 +83,7 @@ body {
 .contenido_texto { 
     text-align: left;
     margin-left: 20%;
-
+    margin-right: 20%;
 
 }
 
@@ -136,12 +136,15 @@ body {
 
 .slider-nav a:hover{
 opacity: 1;
+}
 
 .audio {
-display: flex;
-}
-
-}
+ display: flex;
+ justify-content: center; /* Centra todo el contenido dentro del footer */
+ align-items: center; /* Centra verticalmente el contenido en el footer */
+ margin-top: 50px;
+ margin-bottom: 50px;
+    }
 
 footer {
     display: flex;
