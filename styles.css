@@ -1,8 +1,21 @@
 nav ul li {
 
+    display: flex;
     display: inline;  /* Hace que los elementos se muestren en línea */
     margin-right: 15px;
+
+    
 }
+
+nav ul {
+    display: flex; /* Utiliza Flexbox para la disposición horizontal */
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
+    padding: 0; /* Elimina el padding por defecto */
+    list-style: none; /* Elimina los puntos de lista */
+    overflow: hidden; /* Oculta el contenido desbordado */
+}
+
+
 
 header h2 {
     color: white; /* Color blanco para el h2 en el header */
@@ -62,10 +75,19 @@ nav a:hover{
     display: flex;
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif; /* Fuente utilizada */
-    display: flex;
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center; /* Centra verticalmente los elementos */
+
     
+}
+
+.header_menu li {
+    margin: 0 20px; /* Espacio a ambos lados de cada elemento */
+    
+}
+
+.logo {
+    margin-right: 50px;
 }
 
 body {
@@ -226,12 +248,27 @@ margin-top: 2rem;
     padding: 20px; /* Espaciado interno */
     border-radius: 8px; /* Bordes redondeados */
     width: 50%; /* Ancho del formulario */
-    color: #000000;
-   align-items: center;
-   align-content: center;
-   text-align: left;
-   margin-left: 20%;
-   margin-right: 20%;
+    color: #000000; /* Color del texto */
+    display: block; /* Mantiene el comportamiento por defecto */
+    text-align: left;
+    margin-left: 20%; /* Alinea contenedor con el texto */
+    margin-right: 20%; /* Alinea contenedor con el texto */
+}
+
+/* Asegurarse de que cada label y input se apilen correctamente */
+.formulario_contacto label {
+    display: block; /* Hace que la etiqueta ocupe toda la línea */
+    margin-bottom: 10px; /* Espacio debajo de las etiquetas */
+}
+
+.formulario_contacto input[type="email"],
+.formulario_contacto textarea {
+    width: 100%; /* Hace que el campo ocupe todo el ancho disponible */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    margin-bottom: 15px; /* Espacio debajo de cada campo */
 }
 
 
@@ -243,7 +280,4 @@ input[type="email"], textarea {
     border-radius: 4px; /* Bordes redondeados para los campos */
 }
 
-label {
 
-    margin-bottom: 10px; /* Espacio debajo de las etiquetas */
-}
