@@ -280,4 +280,32 @@ input[type="email"], textarea {
     border-radius: 4px; /* Bordes redondeados para los campos */
 }
 
+@media (max-width: 768px) {
+    .header_menu {
+        flex-direction: column; /* Cambia a columna para pantallas pequeñas */
+        align-items: flex-start; /* Alinea los elementos a la izquierda */
+    }
 
+    .header_menu ul {
+        flex-direction: row; /* Cambia la lista a columna */
+        width: 100%; /* Ocupará todo el ancho */
+    }
+
+    .header_menu li {
+        margin: 10px 0; /* Espacio vertical entre elementos */
+        
+    }
+
+    .contenido_texto { 
+        text-align: left;
+        margin-left: 20%;
+        margin-right: 20%;
+        
+    }
+
+    body {
+        padding-bottom: 100px; /* Ajusta este valor según la altura real del footer */
+    }
+    
+    
+}
