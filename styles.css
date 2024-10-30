@@ -244,6 +244,6 @@ input[type="email"], textarea {
 }
 
 label {
-    display: block; /* Hace que las etiquetas ocupen toda la línea */
+
     margin-bottom: 10px; /* Espacio debajo de las etiquetas */
 }
