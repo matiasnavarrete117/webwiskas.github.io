@@ -298,14 +298,27 @@ input[type="email"], textarea {
 
     .contenido_texto { 
         text-align: left;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 10%;
+        margin-right: 10%;
         
     }
 
     body {
         padding-bottom: 100px; /* Ajusta este valor según la altura real del footer */
     }
+    
+    .horoscopo-imagen {
+        position: relative;
+        padding-top: 100%; /* Proporción 16:9 */
+        overflow: hidden;
+        border-radius: 8px;
+        margin-bottom: 1rem; /* Espacio debajo de la imagen */
+        margin: 0 auto; /* Centra horizontalmente */
+        width: 100%; /* Ajusta el ancho en pantallas pequeñas */
+        margin: 0 auto; /* Centra horizontalmente */
+    }
+
+   
     
     
 }
