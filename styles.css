@@ -289,7 +289,7 @@ input[type="email"], textarea {
     border-radius: 4px; /* Bordes redondeados para los campos */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px)  {
     .header_menu {
         flex-direction: column; /* Cambia a columna para pantallas pequeñas */
         align-items: flex-start; /* Alinea los elementos a la izquierda *//
