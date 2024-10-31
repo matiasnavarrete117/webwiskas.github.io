@@ -1,3 +1,11 @@
+/* Aplica box-sizing a todos los elementos y pseudo-elementos */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
 nav ul li {
 
     display: flex;
@@ -293,8 +301,7 @@ input[type="email"], textarea {
     .header_menu {
         flex-direction: column; /* Cambia a columna para pantallas pequeñas */
         align-items: flex-start; /* Alinea los elementos a la izquierda *//
-        padding: 10px; /* Reduce el padding */
-        font-size: 0.9em; /* Achica el texto en todo el menú */
+        
     }
 
     .header_menu ul {
