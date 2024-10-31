@@ -3,6 +3,9 @@ nav ul li {
     display: flex;
     display: inline;  /* Hace que los elementos se muestren en línea */
     margin-right: 15px;
+    margin: 0; /* Asegura que no haya márgenes adicionales */
+    padding: 3px; /* Ajustar el padding según lo necesario */
+    width: 100%; /* Ocupa todo el espacio disponible */
 
     
 }
@@ -13,6 +16,9 @@ nav ul {
     padding: 0; /* Elimina el padding por defecto */
     list-style: none; /* Elimina los puntos de lista */
     overflow: hidden; /* Oculta el contenido desbordado */
+     padding: 0; /* Elimina el padding del `ul` */
+    margin: 0; /* Elimina el margen */
+    
 }
 
 
@@ -77,6 +83,7 @@ nav a:hover{
     font-family: Arial, Helvetica, sans-serif; /* Fuente utilizada */
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center; /* Centra verticalmente los elementos */
+    
 
     
 }
@@ -87,7 +94,7 @@ nav a:hover{
 }
 
 .logo {
-    margin-right: 50px;
+    margin-right: 1%;
 }
 
 body {
@@ -111,6 +118,8 @@ body {
 
 .contenido_texto p {
     line-height: 1.5; /* Espacio entre líneas */
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .container {
@@ -283,12 +292,19 @@ input[type="email"], textarea {
 @media (max-width: 768px) {
     .header_menu {
         flex-direction: column; /* Cambia a columna para pantallas pequeñas */
-        align-items: flex-start; /* Alinea los elementos a la izquierda */
+        align-items: flex-start; /* Alinea los elementos a la izquierda *//
+        padding: 10px; /* Reduce el padding */
+        font-size: 0.9em; /* Achica el texto en todo el menú */
     }
 
     .header_menu ul {
         flex-direction: row; /* Cambia la lista a columna */
         width: 100%; /* Ocupará todo el ancho */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* Dos columnas de igual ancho */
+        gap: 1px; /* Espacio entre las columnas */
+        width: 100%; /* Ocupará todo el ancho */
+        
     }
 
     .header_menu li {
@@ -298,8 +314,8 @@ input[type="email"], textarea {
 
     .contenido_texto { 
         text-align: left;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
         
     }
 
@@ -318,6 +334,9 @@ input[type="email"], textarea {
         margin: 0 auto; /* Centra horizontalmente */
     }
 
+    .audio {
+        margin-left: 5%;
+    }
    
     
     
