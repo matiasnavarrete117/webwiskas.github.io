@@ -351,5 +351,17 @@ input[type="email"], textarea {
     .audio {
         margin-left: 5%;
     }
+
+    .container { 
+        padding: 0rem;
+    }
+    
+    .formulario_contacto {
+       margin-left: 0%;
+       margin-right: 0%;
+       width: 100%;
+
+
+    }
 }
    
