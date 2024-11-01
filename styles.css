@@ -300,17 +300,6 @@ input[type="email"], textarea {
     border: 1px solid #ccc; /* Borde de los campos */
     border-radius: 4px; /* Bordes redondeados para los campos */
 }
-@media (max-width: 1024px) and (min-width: 577px)
-.header_menu ul {
-    flex-direction: row; /* Cambia la lista a columna */
-    width: 100%; /* Ocupará todo el ancho */
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Dos columnas de igual ancho */
-    gap: 1px; /* Espacio entre las columnas */
-    padding: 0 15px;
-    margin: 10px 0;
-    
-}
 
 
 @media (max-width: 576px)  {
