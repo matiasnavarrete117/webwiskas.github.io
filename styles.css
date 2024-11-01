@@ -85,14 +85,18 @@ nav a:hover{
 }
 
 .header_menu {
-    color: #ffffff; /* Color de Texto Header */
     display: flex;
+    width: calc(100% - 40px); /* Reduce el ancho para permitir márgenes laterales */
+    color: #ffffff; /* Color de Texto Header */
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif; /* Fuente utilizada */
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center; /* Centra verticalmente los elementos */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
     
 
+    
     
 }
 
@@ -296,27 +300,41 @@ input[type="email"], textarea {
     border: 1px solid #ccc; /* Borde de los campos */
     border-radius: 4px; /* Bordes redondeados para los campos */
 }
+@media (max-width: 1024px) and (min-width: 577px)
+.header_menu ul {
+    flex-direction: row; /* Cambia la lista a columna */
+    width: 100%; /* Ocupará todo el ancho */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Dos columnas de igual ancho */
+    gap: 1px; /* Espacio entre las columnas */
+    padding: 0 15px;
+    margin: 10px 0;
+    
+}
 
-@media (max-width: 1024px)  {
+
+@media (max-width: 576px)  {
     .header_menu {
         flex-direction: column; /* Cambia a columna para pantallas pequeñas */
-        align-items: flex-start; /* Alinea los elementos a la izquierda *//
-        
+        align-items: flex-start; /* Alinea los elementos a la izquierda */
     }
 
     .header_menu ul {
         flex-direction: row; /* Cambia la lista a columna */
         width: 100%; /* Ocupará todo el ancho */
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr; /* Dos columnas de igual ancho */
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
         gap: 1px; /* Espacio entre las columnas */
-        width: 100%; /* Ocupará todo el ancho */
+        padding: 0 15px;
+        margin: 10px 0;
         
     }
 
     .header_menu li {
         margin: 10px 0; /* Espacio vertical entre elementos */
-        
+        padding: 8px;
+        text-align: center;
+        width: auto;
     }
 
     .contenido_texto { 
@@ -344,7 +362,5 @@ input[type="email"], textarea {
     .audio {
         margin-left: 5%;
     }
-   
-    
-    
 }
+   
