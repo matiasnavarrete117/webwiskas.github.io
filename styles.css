@@ -108,6 +108,24 @@ nav a:hover{
 .logo {
     margin-right: 1%;
 }
+ 
+.carousel-item {
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; /* Proporción 16:9 (1080/1920 * 100) */
+    position: relative;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center;
+}
+
 
 body {
     background-image: url(wiskasweb_background.jpg);
@@ -125,6 +143,7 @@ body {
     text-align: left;
     margin-left: 20%;
     margin-right: 20%;
+    margin-top: 15px;
 
 }
 
