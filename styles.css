@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Aplica box-sizing a todos los elementos y pseudo-elementos */
 *,
 *::before,
@@ -6,36 +10,17 @@
 }
 
 
-nav ul li {
-
-    display: flex;
-    display: inline;  /* Hace que los elementos se muestren en línea */
-    margin-right: 15px;
-    margin: 0; /* Asegura que no haya márgenes adicionales */
-    padding: 3px; /* Ajustar el padding según lo necesario */
-    width: 100%; /* Ocupa todo el espacio disponible */
-
-    
-}
-
-nav ul {
-    display: flex; /* Utiliza Flexbox para la disposición horizontal */
-    flex-wrap: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
-    padding: 0; /* Elimina el padding por defecto */
-    list-style: none; /* Elimina los puntos de lista */
-    overflow: hidden; /* Oculta el contenido desbordado */
-     padding: 0; /* Elimina el padding del `ul` */
-    margin: 0; /* Elimina el margen */
-    
-}
-
 
 
 header h2 {
     color: white; /* Color blanco para el h2 en el header */
 }
 
-
+footer {
+    margin-top: 5%;
+    
+    
+}
 footer h2 {
     color: black; /* Color negro para el h2 en el footer */
 }
@@ -47,15 +32,6 @@ a {
 
 }
 
-nav a{
-padding-right: 30px;
-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra negra con desenfoque */
-
-}
-
-nav a:hover{
-    color: rgb(255, 128, 25);
-}
 
 .logo {
     display: flex;
@@ -136,14 +112,28 @@ body {
     font-size: large;
   font-style: normal;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Acomoda el footer al final */
   
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Asegura que el body ocupe toda la altura del viewport */
+  }
+
+main {
+    flex: 1; /* Expande el contenido principal para ocupar el espacio disponible */
+    
+  }
+
 .contenido_texto { 
     text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
 
 }
 
@@ -213,21 +203,6 @@ opacity: 1;
  margin-left: 20%;
     }
 
-footer {
-    display: flex;
-    justify-content: center; /* Centra todo el contenido dentro del footer */
-    align-items: center; /* Centra verticalmente el contenido en el footer */
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #ffffff;
-    color: #000000;
-    text-align: center;
-    padding: 1%;
-    z-index: 100;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 .features ul li {
     margin-bottom: 3rem; /* Ajusta el espacio entre líneas */
@@ -337,6 +312,8 @@ input[type="email"], textarea {
         margin: 10px 0;
         
     }
+
+ 
 
     .header_menu li {
         margin: 10px 0; /* Espacio vertical entre elementos */
