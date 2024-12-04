@@ -10,7 +10,13 @@
 }
 
 
-
+.content{
+    position: absolute;
+    margin-top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
 
 header h2 {
     color: white; /* Color blanco para el h2 en el header */
@@ -108,6 +114,9 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
     color: #ffffff; 
     font-size: large;
   font-style: normal;
