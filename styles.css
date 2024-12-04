@@ -123,8 +123,9 @@ body {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Acomoda el footer al final */
-  transform: translate3d(0, 0, 0); /* Optimiza el scroll */
+  justify-content: space-between; 
+  transform: translate3d(0, 0, 0);
+  overflow: hidden
   
 }
 
