@@ -15,51 +15,51 @@ function mostrarHoroscopo() {
     if ((mes === 1 && dia >= 20) || (mes === 2 && dia <= 18)) {
         signo = "Acuario";
         imagenSrc = "acuario.jpeg";
-        mensaje = "¡Eres un gatito curioso y aventurero como Acuario!";
+        mensaje = "¡Eres un wiska curioso y aventurero como Acuario!";
     } else if ((mes === 2 && dia >= 19) || (mes === 3 && dia <= 20)) {
         signo = "Piscis";
         imagenSrc = "piscis.jpeg";
-        mensaje = "Tierno y soñador, eres un gatito Piscis.";
+        mensaje = "Tierno y soñador, eres un wiska Piscis.";
     } else if ((mes === 3 && dia >= 21) || (mes === 4 && dia <= 19)) {
         signo = "Aries";
         imagenSrc = "aries.jpeg";
-        mensaje = "Lleno de energía y valentía, ¡eres un gatito Aries!";
+        mensaje = "Lleno de energía y valentía, ¡eres un wiska Aries!";
     } else if ((mes === 4 && dia >= 20) || (mes === 5 && dia <= 20)) {
         signo = "Tauro";
         imagenSrc = "tauro.jpeg";
-        mensaje = "Paciente y relajado, Tauro es un gatito muy tranquilo.";
+        mensaje = "Paciente y relajado, Tauro es un wiska muy tranquilo.";
     } else if ((mes === 5 && dia >= 21) || (mes === 6 && dia <= 20)) {
         signo = "Géminis";
         imagenSrc = "geminis.jpeg";
-        mensaje = "Curioso y juguetón, ¡eres un gatito Géminis!";
+        mensaje = "Curioso y juguetón, ¡eres un wiska Géminis!";
     } else if ((mes === 6 && dia >= 21) || (mes === 7 && dia <= 22)) {
         signo = "Cáncer";
         imagenSrc = "cancer.jpeg";
-        mensaje = "Eres un gatito dulce y hogareño como Cáncer.";
+        mensaje = "Eres un wiska dulce y hogareño como Cáncer.";
     } else if ((mes === 7 && dia >= 23) || (mes === 8 && dia <= 22)) {
         signo = "Leo";
         imagenSrc = "leo.jpeg";
-        mensaje = "¡Orgulloso y carismático, eres un gatito Leo!";
+        mensaje = "¡Orgulloso y carismático, eres un wiska Leo!";
     } else if ((mes === 8 && dia >= 23) || (mes === 9 && dia <= 22)) {
         signo = "Virgo";
         imagenSrc = "virgo.jpeg";
-        mensaje = "Eres detallista y observador, como un gatito Virgo.";
+        mensaje = "Eres detallista y observador, como un wiska Virgo.";
     } else if ((mes === 9 && dia >= 23) || (mes === 10 && dia <= 22)) {
         signo = "Libra";
         imagenSrc = "libra.jpeg";
-        mensaje = "Amable y sociable, ¡así es un gatito Libra!";
+        mensaje = "Amable y sociable, ¡así es un wiska Libra!";
     } else if ((mes === 10 && dia >= 23) || (mes === 11 && dia <= 21)) {
         signo = "Escorpio";
         imagenSrc = "escorpio.jpeg";
-        mensaje = "Eres intenso y misterioso como un gatito Escorpio.";
+        mensaje = "Eres intenso y misterioso como un wiska Escorpio.";
     } else if ((mes === 11 && dia >= 22) || (mes === 12 && dia <= 21)) {
         signo = "Sagitario";
         imagenSrc = "sagitario.jpeg";
-        mensaje = "Aventurero y libre, eres un gatito Sagitario.";
+        mensaje = "Aventurero y libre, eres un wiska Sagitario.";
     } else if ((mes === 12 && dia >= 22) || (mes === 1 && dia <= 19)) {
         signo = "Capricornio";
         imagenSrc = "capricornio.jpeg";
-        mensaje = "Eres un gatito responsable y tranquilo como Capricornio.";
+        mensaje = "Eres un wiska responsable y tranquilo como Capricornio.";
     }
 
     // Mostrar imagen y mensaje
