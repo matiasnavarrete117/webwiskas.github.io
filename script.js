@@ -73,4 +73,6 @@ function mostrarHoroscopo() {
     } else {
         resultado.innerHTML = "<p>Fecha no válida. Por favor, inténtalo de nuevo.</p>";
     }
+
+    
 }
