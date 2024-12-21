@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 /* Aplica box-sizing a todos los elementos y pseudo-elementos */
 *,
@@ -8,6 +6,7 @@
 *::after {
     box-sizing: border-box;
 }
+
 
 
 .content{
@@ -128,6 +127,17 @@ a {
     padding-left: 10%;
 }
 
+.seleccion_horoscopo button {
+    font-style: oblique;
+    padding: 10px 10px; 
+    background-color: transparent; 
+    background-color: #13111ead;
+    margin: 15px;
+    border-radius: 7px; /* Redondea las esquinas del fondo */
+  
+   
+  }
+
 body {
     /* Remove overflow: hidden */
     background-image: url(wiskasweb_background.jpg);
@@ -145,12 +155,14 @@ body {
     flex-direction: column;
     justify-content: space-between; 
     transform: translate3d(0, 0, 0);
+    
 }
 html, body {
     margin: 0;
     padding: 0;
     height: 100%; /* Asegura que el body ocupe toda la altura del viewport */
     overflow-x: hidden;
+    
   }
 
 main {
@@ -162,14 +174,19 @@ main {
     text-align: left;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 100px;+
-    color: black;
+    margin-top: 100px;
+    
+   
 
+}
+
+h2 {
+    margin-bottom: 15px;
 }
 
 
 .contenido_texto p {
-    line-height: 1.5; /* Espacio entre líneas */
+    line-height: 1.7; /* Espacio entre líneas */
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -230,8 +247,7 @@ opacity: 1;
  display: flex;
  justify-content: left; /* Centra todo el contenido */
  margin-top: 50px;
- margin-bottom: 20px;
- margin-left: 20%;
+ margin-left: 10%;
     }
 
 
@@ -305,6 +321,7 @@ margin-top: 2rem;
 .formulario_contacto label {
     display: block; /* Hace que la etiqueta ocupe toda la línea */
     margin-bottom: 10px; /* Espacio debajo de las etiquetas */
+    
 }
 
 .formulario_contacto input[type="email"],
@@ -365,6 +382,7 @@ input[type="email"], textarea {
         text-align: left;
         margin-left: 5%;
         margin-right: 5%;
+        line-height: 1.8; /* Aumenta este valor para más interlineado */
         
     }
 
@@ -381,9 +399,7 @@ input[type="email"], textarea {
         margin: 0 auto; /* Centra horizontalmente */
     }
 
-    .audio {
-        margin-left: 5%;
-    }
+   
 
     .container { 
         padding: 0rem;
