@@ -18,7 +18,7 @@ function mostrarHoroscopo() {
         mensaje = "¡Eres un wiska curioso y aventurero como Acuario!";
     } else if ((mes === 2 && dia >= 19) || (mes === 3 && dia <= 20)) {
         signo = "Piscis";
-        imagenSrc = "piscis.jpeg";
+        imagenSrc = "piscis.jpg";
         mensaje = "Tierno y soñador, eres un wiska Piscis.";
     } else if ((mes === 3 && dia >= 21) || (mes === 4 && dia <= 19)) {
         signo = "Aries";
