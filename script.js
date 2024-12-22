@@ -14,7 +14,7 @@ function mostrarHoroscopo() {
     // Determinar el signo según día y mes
     if ((mes === 1 && dia >= 20) || (mes === 2 && dia <= 18)) {
         signo = "Acuario";
-        imagenSrc = "acuario.jpeg";
+        imagenSrc = "acuario.jpg";
         mensaje = "¡Eres un wiska curioso y aventurero como Acuario!";
     } else if ((mes === 2 && dia >= 19) || (mes === 3 && dia <= 20)) {
         signo = "Piscis";
