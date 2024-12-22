@@ -3,7 +3,7 @@ function mostrarHoroscopo() {
     const dia = parseInt(document.getElementById("dia").value);
     const mes = parseInt(document.getElementById("mes").value);
     const resultado = document.getElementById("resultado");
-    let signo, imagenSrc, mensaje;
+    let signo, imagenSrc, imagenAlt, mensaje;
 
     // Verifica que los valores de día y mes sean válidos
     if (isNaN(dia) || isNaN(mes) || dia < 1 || dia > 31 || mes < 1 || mes > 12) {
@@ -23,30 +23,37 @@ function mostrarHoroscopo() {
     } else if ((mes === 3 && dia >= 21) || (mes === 4 && dia <= 19)) {
         signo = "Aries";
         imagenSrc = "aries.jpg";
+        imagenAlt = "Imagen de Aries";
         mensaje = "Lleno de energía y valentía, ¡eres un wiska Aries!";
     } else if ((mes === 4 && dia >= 20) || (mes === 5 && dia <= 20)) {
         signo = "Tauro";
         imagenSrc = "tauro.jpg";
+        imagenAlt = "Imagen de Tauro";
         mensaje = "Paciente y relajado, Tauro es un wiska muy tranquilo.";
     } else if ((mes === 5 && dia >= 21) || (mes === 6 && dia <= 20)) {
         signo = "Géminis";
         imagenSrc = "geminis.jpg";
+        imagenAlt = "Imagen de Géminis";
         mensaje = "Curioso y juguetón, ¡eres un wiska Géminis!";
     } else if ((mes === 6 && dia >= 21) || (mes === 7 && dia <= 22)) {
         signo = "Cáncer";
         imagenSrc = "cancer.jpg";
+        imagenAlt = "Imagen de Cáncer";
         mensaje = "Eres un wiska dulce y hogareño como Cáncer.";
     } else if ((mes === 7 && dia >= 23) || (mes === 8 && dia <= 22)) {
         signo = "Leo";
         imagenSrc = "leo.jpg";
+        imagenAlt = "Imagen de Leo";
         mensaje = "¡Orgulloso y carismático, eres un wiska Leo!";
     } else if ((mes === 8 && dia >= 23) || (mes === 9 && dia <= 22)) {
         signo = "Virgo";
         imagenSrc = "virgo.jpg";
+        imagenAlt = "Imagen de Virgo";
         mensaje = "Eres detallista y observador, como un wiska Virgo.";
     } else if ((mes === 9 && dia >= 23) || (mes === 10 && dia <= 22)) {
         signo = "Libra";
         imagenSrc = "libra.jpg";
+        imagenAlt = "Imagen de Libra";
         mensaje = "Amable y sociable, ¡así es un wiska Libra!";
     } else if ((mes === 10 && dia >= 23) || (mes === 11 && dia <= 21)) {
         signo = "Escorpio";
@@ -66,7 +73,7 @@ function mostrarHoroscopo() {
     if (signo) {
         resultado.innerHTML = `
             <div class="horoscopo-imagen">
-                <img src="${imagenSrc}" alt="${signo}">
+                <img src="${imagenSrc}" alt="${imagenAlt}">
             </div>
             <p class="mensaje">${mensaje}</p>
         `;
